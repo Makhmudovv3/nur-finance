@@ -1,0 +1,153 @@
+.testimonials {
+    padding: 60px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.testimonials .title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 5%;
+}
+
+.reviews-wrapper {
+    background-color: #F0F4F8;
+    border-radius: 120px 10px 120px 10px;
+    padding: 60px 40px 100px 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+}
+
+.video-preview {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+}
+
+.bg_img1 {
+    width: 405px;
+    height: 220px;
+    background-image: url("../assets/img1.png");
+}
+
+.bg_img2 {
+    background-image: url("../assets/img2.png");
+    width: 405px;
+    height: 220px;
+}
+
+.bg_img3 {
+    background-image: url("../assets/img3.png");
+    width: 405px;
+    height: 220px;
+}
+
+.play-icon {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+.review-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #6E9BB8;
+}
+
+.view-more {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    color: #0000DE;
+    border: none;
+    padding: 12px 60px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.view-more:hover {
+    background-color: #f8f8f8;
+}
+
+
+@media (max-width: 1024px) {
+    .reviews-wrapper {
+        border-radius: 60px 10px 60px 10px;
+        padding: 40px 20px 90px 20px;
+    }
+
+    .video-preview {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials .title {
+        text-align: center;
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .reviews-wrapper {
+        border-radius: 40px;
+        padding: 40px 15px 100px 15px;
+    }
+
+    .review-card {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-preview {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+        border-radius: 30px;
+    }
+
+    .play-icon {
+        width: 60px;
+    }
+
+    .view-more {
+        width: 85%;
+        padding: 12px 0;
+    }
+}

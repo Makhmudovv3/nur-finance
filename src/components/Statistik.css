@@ -1,0 +1,101 @@
+
+.Statistik_Component {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.containerr,
+.containerr2 {
+    background-color: #0000DE;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-height: 135px;
+}
+
+.icon1 {
+    font-size: 80px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.containerr p,
+.containerr2 p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #FFFFFF;
+}
+
+.static {
+    background-color: #F0F4F8;
+    border-top-left-radius: 64px;
+    border-bottom-right-radius: 64px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.static_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.static_img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+    .section1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .containerr,
+    .containerr2 {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        flex-direction: row;
+    }
+
+    .icon1 {
+        font-size: 50px;
+    }
+
+    .containerr p,
+    .containerr2 p {
+        font-size: 16px;
+    }
+
+    .static {
+        padding: 30px 15px;
+        border-radius: 40px 10px 40px 10px;
+        margin-top: 20px;
+    }
+
+    .static_img img {
+        width: 100%;
+    }
+}

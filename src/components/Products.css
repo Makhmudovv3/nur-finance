@@ -1,0 +1,319 @@
+.Opp_Wrapper {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.Opp_Container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Opp_MainTitle {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.Opp_MainGrid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+}
+
+.Opp_FeatureItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.Opp_IconBox {
+    width: 56px;
+    height: 56px;
+    background: #EAF1FF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #355DFB;
+    flex-shrink: 0;
+}
+
+.Opp_FeatureItem p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.Opp_InvestBtn {
+    margin-top: 20px;
+    padding: 16px 32px;
+    background: #0000DE;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Opp_TopStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.Opp_SectionTitle {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.Opp_BarChart {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.Opp_BarItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Opp_BarLabel {
+    font-size: 18px;
+    font-weight: 700;
+    color: #8FA3B0;
+    text-align: center;
+}
+
+.Opp_BarLabel span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.Opp_BarShape {
+    width: 100%;
+    max-width: 85px;
+    border-radius: 15px 15px 5px 5px;
+    margin: 10px 0;
+}
+
+.gray_bar {
+    background: #DDE3EE;
+}
+
+.blue_bar {
+    background: #355DFB;
+}
+
+.Opp_BarName {
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    min-height: 35px;
+}
+
+.Opp_LiqGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.Opp_LiqInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.Opp_LiqInfo span {
+    color: #8FA3B0;
+}
+
+.Opp_CheckText {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.Opp_ProgressBg {
+    height: 10px;
+    background: #F0F4F8;
+    border-radius: 10px;
+}
+
+.Opp_Progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.gray_fill {
+    background: #CBD8E9;
+}
+
+.blue_fill {
+    background: #355DFB;
+}
+
+.blue_text {
+    color: #355DFB !important;
+}
+
+.Opp_LineGraph {
+    height: 150px;
+    background: #fcfcfc;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.Opp_GraphLegend {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot.gray {
+    background: #8FA3B0;
+}
+
+.dot.blue {
+    background: #355DFB;
+}
+
+.Opp_LineGraph {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Opp_MainGraphImg {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.Opp_GraphLegend {
+    display: flex;
+    gap: 20px;
+    margin-top: auto;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 992px) {
+
+    /* 1. Asosiy sarlavha */
+    .Opp_MainTitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .Opp_MainGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .Opp_StatsContent {
+        width: 100%;
+    }
+
+    .Opp_TopStats {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Opp_BarChart {
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .Opp_BarShape {
+        max-width: 65px;
+    }
+
+    .Opp_BarLabel {
+        font-size: 13px;
+    }
+
+    .Opp_BarName {
+        font-size: 11px;
+    }
+
+    .Opp_MainGraphImg {
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        object-fit: contain;
+    }
+
+    .Opp_LiqGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Opp_Features {
+        width: 100%;
+    }
+
+    .Opp_FeatureItem {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .Opp_IconBox {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .Opp_FeatureItem p {
+        font-size: 14px;
+    }
+
+    .Opp_InvestBtn {
+        width: 100%;
+        text-align: center;
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .Opp_BarLabel {
+        font-size: 11px;
+    }
+
+    .Opp_BarLabel span {
+        font-size: 8px;
+    }
+
+    .Opp_SectionTitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}

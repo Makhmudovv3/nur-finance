@@ -1,0 +1,152 @@
+.footer {
+    background-color: #f4f7f9;
+    padding: 40px 10%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 250px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.search-container {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 821px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-left: 200px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-contacts .phone {
+    color: #0000ff;
+    font-size: 32px;
+    margin: 0;
+}
+
+.footer-contacts .email,
+.footer-contacts .address {
+    margin: 10px 0;
+    color: #666;
+}
+
+.footer-contacts .work-hours {
+    font-size: 12px;
+    color: #999;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-links-grid {
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.link-group h3 {
+    color: #0000ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.link-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-group ul li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.link-group ul li:hover {
+    color: #0000ff;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.footer-bottom h4 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.copyright-row {
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+    color: #777;
+}
+
+.copyright-row a {
+    text-decoration: none;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+
+    .footer-top,
+    .footer-main,
+    .footer-links-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,151 @@
+.Cards_Section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.Main_Title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Desktopda 2 tadan */
+    gap: 25px;
+}
+
+.Card {
+    background-color: #F4F7F9;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.Card_Left {
+    width: 60%;
+    z-index: 2;
+}
+
+.Card_Left span {
+    color: #8FA3B0;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Card_Left h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.Stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.Stats h1 {
+    font-size: 32px;
+    color: #0000DE;
+    font-weight: 700;
+}
+
+.Card_Left p {
+    font-size: 14px;
+    color: #6E9BB8;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.Buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.Blue_Btn,
+.White_Btn {
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Blue_Btn {
+    background-color: #0000DE;
+    color: white;
+}
+
+.White_Btn {
+    background-color: white;
+    color: #0000DE;
+}
+
+.Card_Img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+    height: auto;
+    z-index: 1;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Card {
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+    .Card_Content {
+        width: 100%;
+    }
+
+    .Card_Content h3 {
+        width: 70%;
+    }
+
+
+    .Card_Img {
+        height: 180px;
+        right: -10px;
+    }
+
+    .Stats {
+        gap: 20px;
+    }
+
+    .Stat_Item h1 {
+        font-size: 24px;
+    }
+
+    .Description {
+        width: 60%;
+    }
+
+    .Buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Blue_Btn,
+    .White_Btn {
+        width: 100%;
+        ;
+        text-align: center;
+    }
+}
+
